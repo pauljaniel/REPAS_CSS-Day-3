@@ -174,7 +174,6 @@ section#grid-layout{
     display: flex;
     justify-content: center;
     height:100vh;
-    border: 5px solid black;
     align-items: center;
 }
 .container{
@@ -277,6 +276,63 @@ section#grid-layout{
     grid-row-end: 3;
 }
 
+
+section#grid-layout-area{
+   
+    display: flex;
+    justify-content: center;
+    height:50vh;
+    align-items: center;
+}
+.container-area {
+    width: 60vw;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "area-1 area-1 area-1 area-1 area-1"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-5 area-5 area-5 area-5 area-4";
+  }
+
+.area-1{
+    text-align: center;
+    background-color: gray;
+    grid-area: area-1;
+    border-radius: 1rem;
+}
+.area-2{
+    text-align: center;
+    background-color: darkgray;
+    grid-area: area-2;
+    border-radius: 1rem;
+}
+.area-3{
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    grid-area: area-3;
+    border-radius: 1rem;
+}
+.area-4{
+    text-align: center;
+    background-color: darkgray;
+    grid-area: area-4;
+    border-radius: 1rem;
+}
+.area-5{
+    text-align: center;
+    background-color: gray;
+    grid-area: area-5;
+    border-radius: 1rem;
+}
+
+  
 
 
 /* GRID */
